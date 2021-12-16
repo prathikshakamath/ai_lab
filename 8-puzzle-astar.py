@@ -20,7 +20,7 @@ def h(state, target):
 def astar(state, target):
     states = []
     states.append(state)
-    print(states)
+    # print(states)
     # states.append(src)
     g = 0
     visited_states = []
@@ -39,7 +39,7 @@ def astar(state, target):
         states = [moves[i]
                   for i in range(len(moves)) if costs[i] == min(costs)]
         g += 1
-        print(states)
+        # print(states)
     print("Fail")
 
 
