@@ -10,10 +10,10 @@ def print_b(src):
 
 def h(state, target):
     count = 0
-    i = 0
-    for j in state:
-        if state[i] != target[i]:
+    for j in range(0, len(state)):
+        if state[j] != target[j]:
             count = count+1
+    # print(count)
     return count
 
 
